@@ -1,0 +1,22 @@
+uuid: 2e7b4306-1c55-41af-8600-3064830692ba
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alpha
+_core:
+  default_config_hash: nGaQCmqdNzKu7oDJYIRdZLreHusoXsX5VLP4Px5RZ2E
+id: alpha_content
+theme: alpha
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 8cf4deb2-2f26-4bcc-8d47-f49435d495ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - alpha
+_core:
+  default_config_hash: LpornNoMExEEa8S9tCQ2weoyqLESigY-vqHNAOqbdf0
+id: alpha_main_navigation
+theme: alpha
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

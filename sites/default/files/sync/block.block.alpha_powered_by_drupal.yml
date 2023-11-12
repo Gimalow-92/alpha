@@ -1,0 +1,22 @@
+uuid: 29e49ed9-fab0-40ce-8be1-5b52c825f436
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alpha
+_core:
+  default_config_hash: 0OYchx1lZUNBp7fJtFbeHGAArQT1b45R0LTprybQc4I
+id: alpha_powered_by_drupal
+theme: alpha
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

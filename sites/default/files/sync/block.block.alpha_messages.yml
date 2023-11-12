@@ -1,0 +1,22 @@
+uuid: 83a8dbaf-512d-452a-8c1a-18d1c42246c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alpha
+_core:
+  default_config_hash: 5Pm23GReOZKPO2zWbjioe97Rde5Heur67Eql1ML-eFc
+id: alpha_messages
+theme: alpha
+region: content
+weight: -7
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  label_display: '0'
+  provider: system
+visibility: {  }

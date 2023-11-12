@@ -1,0 +1,20 @@
+uuid: 1b62709d-d1e4-48b8-b87d-cd5226d24bf9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - alpha
+_core:
+  default_config_hash: 1nFmyxIMaDSNdsLcGMBW4igdEbkYudKli67ZjF6V2eQ
+id: alpha_page_title
+theme: alpha
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 135f6c23-50ca-461a-a0d8-c2a08edd21c5
+langcode: en
+status: true
+dependencies:
+  theme:
+    - alpha
+_core:
+  default_config_hash: iugxHEVp1jPHjfyss658LzSwZVapZP7bI24T0DbTgHc
+id: alpha_local_tasks
+theme: alpha
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

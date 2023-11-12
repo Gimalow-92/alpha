@@ -1,0 +1,14 @@
+uuid: 1ff2b859-48ff-4b7b-8acc-51f13e9cb321
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - paladescu.george@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

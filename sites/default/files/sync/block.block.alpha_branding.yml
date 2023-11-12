@@ -1,0 +1,25 @@
+uuid: d0bfef6d-9c24-4f56-b0e5-0b618d6c1292
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - alpha
+_core:
+  default_config_hash: 1FF2Ze6zG41U-nw5L92Lf9GZtTurk454eZn5EmZ5AQU
+id: alpha_branding
+theme: alpha
+region: nav_branding
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

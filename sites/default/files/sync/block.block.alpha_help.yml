@@ -1,0 +1,22 @@
+uuid: daa0d95f-f78e-41fe-a41b-3e0c97f1606d
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - alpha
+_core:
+  default_config_hash: PvyDXreU2uGL6AF5ZnDb37jfgFtPgxUPYYXCHPJx8T8
+id: alpha_help
+theme: alpha
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
