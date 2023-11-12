@@ -1,0 +1,37 @@
+{
+  "name": "hogarth",
+  "version": "1.0.0",
+  "description": "Hogarth 3.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp:build": "gulp sass",
+    "gulp:watch": "gulp sass_watch"
+  },
+  "keywords": [
+    "SASS",
+    "Drupal"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^3.6.4",
+    "popper.js": "^1.14.3",
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}
