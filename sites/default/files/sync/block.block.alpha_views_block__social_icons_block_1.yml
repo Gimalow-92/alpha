@@ -1,0 +1,24 @@
+uuid: c510a8e4-f296-4c06-895f-f79c6f5b4d1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.social_icons
+  module:
+    - views
+  theme:
+    - alpha
+id: alpha_views_block__social_icons_block_1
+theme: alpha
+region: nav_main
+weight: 0
+provider: null
+plugin: 'views_block:social_icons-block_1'
+settings:
+  id: 'views_block:social_icons-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

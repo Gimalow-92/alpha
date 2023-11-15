@@ -1,0 +1,8 @@
+uuid: 636a9dcc-9a5e-4d64-b45d-dbf91a4d1052
+langcode: en
+status: true
+dependencies: {  }
+name: 'Social Icons'
+vid: social_icons
+description: ''
+weight: 0

@@ -2,3 +2,9 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+
+social-icons:
+  css:
+    component:
+      css/module/social-icons/social-icons.module.min.css:
+        minified: true

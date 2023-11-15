@@ -1,0 +1,54 @@
+uuid: cd751872-8450-4080-9cff-81688fd67c63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.social_icons.field_icon_footer
+    - field.field.taxonomy_term.social_icons.field_icon_header
+    - field.field.taxonomy_term.social_icons.field_link
+    - image.style.thumbnail
+    - taxonomy.vocabulary.social_icons
+  module:
+    - image
+    - link
+id: taxonomy_term.social_icons.default
+targetEntityType: taxonomy_term
+bundle: social_icons
+mode: default
+content:
+  field_icon_footer:
+    type: image_image
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_icon_header:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  path: true
+  status: true

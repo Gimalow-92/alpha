@@ -1,6 +1,6 @@
 uuid: 4b285ef0-debb-4a34-b54f-fe1cf5803720
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.account
@@ -12,7 +12,7 @@ _core:
   default_config_hash: Bwq8EJMv1COyMPL7SCYjK9HhwKM5z3HXKBGtoWQJBtc
 id: alpha_account_menu
 theme: alpha
-region: nav_additional
+region: header
 weight: -7
 provider: null
 plugin: 'system_menu_block:account'
