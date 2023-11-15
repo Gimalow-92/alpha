@@ -4,16 +4,13 @@ description: 'alpha subtheme based on Bootstrap 5 theme.'
 core_version_requirement: '^9.4 || ^10'
 'base theme': bootstrap5
 libraries:
+  - bootstrap5/global-styling
   - alpha/global-styling
-ckeditor_stylesheets:
-  - css/style.css
-ckeditor5-stylesheets:
-  - css/ck5style.css
 regions:
   header: Header
   nav_branding: 'Navigation branding region'
   nav_main: 'Main navigation region'
   content: 'Main content'
   footer: Footer
-libraries-override:
-  bootstrap5/global-styling: false
+#libraries-override:
+#  bootstrap5/global-styling: false

@@ -1,0 +1,21 @@
+uuid: afcbcf3e-7270-47ac-ab1f-8a8e576d5f53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_t_background
+    - paragraphs.paragraphs_type.text
+  module:
+    - options
+id: paragraph.text.field_t_background
+field_name: field_t_background
+entity_type: paragraph
+bundle: text
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
