@@ -1,1 +1,17 @@
 @import "../resources/default-variables";
+
+@mixin cta {
+  padding: 16px 32px;
+  border: 1px solid $text;
+  color: $text;
+  text-decoration: none;
+  transition: .2s all ease-in-out;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $light;
+    border: 1px solid $text2;
+    background-color: $text2;
+    transition: .2s all ease-in-out;
+  }
+}

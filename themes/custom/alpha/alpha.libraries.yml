@@ -1,10 +1,16 @@
 global-styling:
   css:
     theme:
-      css/style.css: {}
+      css/layout/layout.min.css: {}
 
 social-icons:
   css:
     component:
       css/module/social-icons/social-icons.module.min.css:
+        minified: true
+
+paragraph-text:
+  css:
+    component:
+      css/module/paragraph-text/paragraph-text.module.min.css:
         minified: true
