@@ -1,0 +1,21 @@
+uuid: e5d2a38e-c6bc-44be-a330-023f60f88c88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_twi_background
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - options
+id: paragraph.text_with_image.field_twi_background
+field_name: field_twi_background
+entity_type: paragraph
+bundle: text_with_image
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

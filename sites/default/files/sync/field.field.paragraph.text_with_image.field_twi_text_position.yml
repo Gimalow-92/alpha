@@ -1,0 +1,21 @@
+uuid: b6e48808-e69c-4eb8-a4a6-ef4bc3f9e610
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_twi_text_position
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - options
+id: paragraph.text_with_image.field_twi_text_position
+field_name: field_twi_text_position
+entity_type: paragraph
+bundle: text_with_image
+label: 'Text Position'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

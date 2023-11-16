@@ -53,7 +53,9 @@
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
-      {{ content|without('field_t_background') }}
+      <div class="paragraph-container">
+        {{ content|without('field_t_background') }}
+      </div>
     {% endblock %}
   </div>
 {% endblock paragraph %}
