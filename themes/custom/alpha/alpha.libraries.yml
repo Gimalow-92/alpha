@@ -14,3 +14,9 @@ paragraph-text:
     component:
       css/module/paragraph-text/paragraph-text.module.min.css:
         minified: true
+
+paragraph-anchor:
+  css:
+    component:
+      css/module/paragraph-anchor/paragraph-anchor.module.min.css:
+        minified: true

@@ -1,0 +1,21 @@
+uuid: 13b1e42b-7e57-4bd6-87cb-9fb47e802ee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_a_background
+    - paragraphs.paragraphs_type.anchor
+  module:
+    - options
+id: paragraph.anchor.field_a_background
+field_name: field_a_background
+entity_type: paragraph
+bundle: anchor
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

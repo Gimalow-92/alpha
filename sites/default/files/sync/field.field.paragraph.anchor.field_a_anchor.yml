@@ -1,0 +1,30 @@
+uuid: c43759aa-4b87-4bb1-83e7-db905a7cf406
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_a_anchor
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.anchor
+  module:
+    - text
+id: paragraph.anchor.field_a_anchor
+field_name: field_a_anchor
+entity_type: paragraph
+bundle: anchor
+label: Anchor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text

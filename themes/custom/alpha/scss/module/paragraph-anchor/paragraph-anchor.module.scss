@@ -1,0 +1,24 @@
+@import "../../resources/default-variables";
+@import "../../resources/mixins";
+
+.paragraph--type--anchor {
+  position: relative;
+  overflow: hidden;
+  .field--name-field-a-title {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  .field--name-field-a-background-image {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    background: white;
+    img {
+      width: 100%;
+      opacity: 0.5;
+    }
+  }
+}
