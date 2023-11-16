@@ -1,0 +1,52 @@
+uuid: eb37ca09-6c63-484e-89f7-fb771be2ba22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.anchor.field_a_anchor
+    - field.field.paragraph.anchor.field_a_background
+    - field.field.paragraph.anchor.field_a_background_image
+    - field.field.paragraph.anchor.field_a_title
+    - paragraphs.paragraphs_type.anchor
+  module:
+    - image
+    - options
+    - text
+id: paragraph.anchor.default
+targetEntityType: paragraph
+bundle: anchor
+mode: default
+content:
+  field_a_anchor:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_a_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_a_background_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_a_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }
