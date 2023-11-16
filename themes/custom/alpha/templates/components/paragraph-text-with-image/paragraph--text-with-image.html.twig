@@ -44,17 +44,25 @@
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished',
-    content.field_a_background.0['#markup']
+    content.field_twi_background.0['#markup'],
+    content.field_twi_text_position.0['#markup']
   ]
 %}
 
-{{ attach_library('alpha/paragraph-anchor') }}
+{{ attach_library('alpha/paragraph-text-with-image') }}
 
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }} id="{{ content.field_a_anchor.0['#text'] }}">
+  <div{{ attributes.addClass(classes) }}>
     {% block content %}
       <div class="paragraph-container">
-        {{ content|without('field_a_background', 'field_a_anchor') }}
+        <div class="container-text">
+          {{ content.field_twi_title }}
+          {{ content.field_twi_description }}
+          {{ content.field_twi_cta }}
+        </div>
+        <div class="container-image">
+          {{ content.field_twi_image }}
+        </div>
       </div>
     {% endblock %}
   </div>

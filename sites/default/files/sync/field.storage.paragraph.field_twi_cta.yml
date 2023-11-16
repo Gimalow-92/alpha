@@ -1,0 +1,19 @@
+uuid: b09ab0a2-b1fa-4731-8db5-5235066f5c71
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_twi_cta
+field_name: field_twi_cta
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

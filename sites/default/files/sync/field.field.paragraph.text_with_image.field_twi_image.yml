@@ -1,0 +1,38 @@
+uuid: 81da6b6f-5e81-4d0c-8cae-8ca9b417b71f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_twi_image
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - image
+id: paragraph.text_with_image.field_twi_image
+field_name: field_twi_image
+entity_type: paragraph
+bundle: text_with_image
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

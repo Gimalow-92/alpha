@@ -1,0 +1,27 @@
+uuid: 9ab1ec4b-73cb-4b17-8c9b-e74573ae92b6
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_twi_text_position
+field_name: field_twi_text_position
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: right
+      label: Right
+    -
+      value: left
+      label: Left
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,74 @@
+uuid: 81310bb5-20d6-4476-bc28-f347bd00b31a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_with_image.field_twi_background
+    - field.field.paragraph.text_with_image.field_twi_cta
+    - field.field.paragraph.text_with_image.field_twi_description
+    - field.field.paragraph.text_with_image.field_twi_image
+    - field.field.paragraph.text_with_image.field_twi_text_position
+    - field.field.paragraph.text_with_image.field_twi_title
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - image
+    - link
+    - options
+    - text
+id: paragraph.text_with_image.default
+targetEntityType: paragraph
+bundle: text_with_image
+mode: default
+content:
+  field_twi_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_twi_cta:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_twi_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_twi_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_twi_text_position:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_twi_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

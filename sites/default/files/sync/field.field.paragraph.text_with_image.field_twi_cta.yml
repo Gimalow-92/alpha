@@ -1,0 +1,23 @@
+uuid: 7e21e351-a09e-4edc-91cc-98c6d8357f2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_twi_cta
+    - paragraphs.paragraphs_type.text_with_image
+  module:
+    - link
+id: paragraph.text_with_image.field_twi_cta
+field_name: field_twi_cta
+entity_type: paragraph
+bundle: text_with_image
+label: CTA
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

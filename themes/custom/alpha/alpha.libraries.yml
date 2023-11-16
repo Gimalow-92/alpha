@@ -1,7 +1,8 @@
 global-styling:
   css:
     theme:
-      css/layout/layout.min.css: {}
+      css/layout/layout.min.css:
+        minified: true
 
 social-icons:
   css:
@@ -19,4 +20,10 @@ paragraph-anchor:
   css:
     component:
       css/module/paragraph-anchor/paragraph-anchor.module.min.css:
+        minified: true
+
+paragraph-text-with-image:
+  css:
+    component:
+      css/module/paragraph-text-with-image/paragraph-text-with-image.module.min.css:
         minified: true

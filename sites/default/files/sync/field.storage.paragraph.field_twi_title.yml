@@ -1,0 +1,19 @@
+uuid: 66c10a47-28ef-466a-a457-d82e0f8aedbf
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_twi_title
+field_name: field_twi_title
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
