@@ -26,6 +26,7 @@ module:
   history: 0
   image: 0
   link: 0
+  media: 0
   menu_link_content: 0
   menu_ui: 0
   metatag: 0
@@ -46,6 +47,8 @@ module:
   tour: 0
   update: 0
   user: 0
+  video_embed_field: 0
+  video_embed_media: 0
   views_ui: 0
   views: 10
   paragraphs: 11

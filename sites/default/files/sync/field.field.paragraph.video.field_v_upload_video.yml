@@ -1,0 +1,27 @@
+uuid: 9d4f660a-012e-40c8-a172-fe81f34ec7dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_v_upload_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - file
+id: paragraph.video.field_v_upload_video
+field_name: field_v_upload_video
+entity_type: paragraph
+bundle: video
+label: 'Upload Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'wma mp4 mpg flv avi'
+  max_filesize: ''
+  description_field: false
+field_type: file
