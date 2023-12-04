@@ -40,3 +40,6 @@ sites/simpletest
 
 # Ignore multi-site test environment.
 # simpletest
+
+themes/custom/alpha/css
+themes/custom/alpha/node_modules

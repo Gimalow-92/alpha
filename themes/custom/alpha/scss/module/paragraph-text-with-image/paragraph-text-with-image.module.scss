@@ -19,21 +19,25 @@
         position: relative;
       }
     }
+
     .container-text {
       padding: 40px 20px;
       @media (min-width: $md) {
         padding: 110px 40px;
       }
     }
+
     .field--name-field-twi-title,
     .field--name-field-twi-description,
     .field--name-field-twi-cta {
       text-align: center;
     }
+
     .field--name-field-twi-title,
     .field--name-field-twi-description {
       margin-bottom: 32px;
     }
+
     .field--name-field-twi-image {
       img {
         @media (min-width: $md) {
@@ -46,13 +50,16 @@
         }
       }
     }
+
     .field--name-field-twi-cta {
       padding: 16px 0;
+
       a {
         @include cta;
       }
     }
   }
+
   &.right {
     .paragraph-container {
       @media (min-width: $md) {
@@ -60,6 +67,7 @@
       }
     }
   }
+
   &.left {
     .paragraph-container {
       @media (min-width: $md) {

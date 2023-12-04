@@ -1,0 +1,30 @@
+uuid: 1c7d3bdf-126b-4fd2-8273-920a0450eaac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_b_description
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.bullet
+  module:
+    - text
+id: paragraph.bullet.field_b_description
+field_name: field_b_description
+entity_type: paragraph
+bundle: bullet
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_long

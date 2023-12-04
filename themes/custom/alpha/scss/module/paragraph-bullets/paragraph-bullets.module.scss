@@ -1,0 +1,58 @@
+@import "../../resources/default-variables";
+@import "../../resources/mixins";
+
+.paragraph--type--bullets {
+  padding: 40px 0 30px;
+
+  .paragraph-container {
+    max-width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .field--name-field-b-title,
+  .field--name-field-b-subtitle, {
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+    padding: 0 20px;
+    @media (min-width: $md) {
+      max-width: 60%;
+    }
+  }
+
+  .field--name-field-b-bullet {
+    display: flex;
+    justify-content: center;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+
+    > .field__item {
+      padding: 10px;
+      width: 50%;
+      @media (min-width: $sm) {
+        width: 33.3333%;
+      }
+      @media (min-width: $xl) {
+        width: 16.6666%;
+      }
+    }
+
+    .paragraph--type--bullet {
+      display: flex;
+      flex-direction: column;
+
+      .field--name-field-b-image {
+        margin: 0 auto 30px;
+
+        img {
+          max-width: 100px;
+        }
+      }
+
+      .field--name-field-b-description {
+        text-align: center;
+      }
+    }
+  }
+}

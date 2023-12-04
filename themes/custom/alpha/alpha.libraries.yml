@@ -33,3 +33,9 @@ paragraph-cards:
     component:
       css/module/paragraph-cards/paragraph-cards.module.min.css:
         minified: true
+
+paragraph-bullets:
+  css:
+    component:
+      css/module/paragraph-bullets/paragraph-bullets.module.min.css:
+        minified: true
