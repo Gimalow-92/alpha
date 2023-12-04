@@ -1,0 +1,30 @@
+uuid: 129384c8-6c6f-4e4d-8525-0714c7026cd2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_b_subtitle
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.bullets
+  module:
+    - text
+id: paragraph.bullets.field_b_subtitle
+field_name: field_b_subtitle
+entity_type: paragraph
+bundle: bullets
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_long

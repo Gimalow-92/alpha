@@ -3,10 +3,12 @@
 
 .paragraph--type--text {
   padding: 40px 0;
+
   .paragraph-container {
     max-width: 1440px;
     margin: 0 auto;
   }
+
   .field--name-field-t-title,
   .field--name-field-t-text,
   .field--name-field-t-cta {
@@ -18,6 +20,7 @@
       max-width: 60%;
     }
   }
+
   .field--name-field-t-title,
   .field--name-field-t-text {
     margin-bottom: 32px;
@@ -25,6 +28,7 @@
 
   .field--name-field-t-cta {
     padding: 16px 0;
+
     a {
       @include cta;
     }

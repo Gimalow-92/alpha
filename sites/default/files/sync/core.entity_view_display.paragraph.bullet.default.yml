@@ -1,0 +1,35 @@
+uuid: 5deca831-c765-4bf4-a219-37ef1ecfdbfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bullet.field_b_description
+    - field.field.paragraph.bullet.field_b_image
+    - paragraphs.paragraphs_type.bullet
+  module:
+    - image
+    - text
+id: paragraph.bullet.default
+targetEntityType: paragraph
+bundle: bullet
+mode: default
+content:
+  field_b_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_b_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

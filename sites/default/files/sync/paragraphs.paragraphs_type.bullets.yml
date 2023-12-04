@@ -1,0 +1,10 @@
+uuid: f42d0c54-d459-4017-b5a6-0a4316323930
+langcode: en
+status: true
+dependencies: {  }
+id: bullets
+label: Bullets
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

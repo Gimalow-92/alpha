@@ -1,0 +1,50 @@
+uuid: 3e26bdf3-cb68-4be3-8c4a-09c0020c90d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bullets.field_b_background
+    - field.field.paragraph.bullets.field_b_bullet
+    - field.field.paragraph.bullets.field_b_subtitle
+    - field.field.paragraph.bullets.field_b_title
+    - paragraphs.paragraphs_type.bullets
+  module:
+    - entity_reference_revisions
+    - options
+    - text
+id: paragraph.bullets.default
+targetEntityType: paragraph
+bundle: bullets
+mode: default
+content:
+  field_b_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_b_bullet:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_b_subtitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_b_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

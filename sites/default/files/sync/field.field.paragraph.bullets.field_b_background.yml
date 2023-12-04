@@ -1,0 +1,21 @@
+uuid: d68d689c-38d8-4f47-acf6-14e90dd81136
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_b_background
+    - paragraphs.paragraphs_type.bullets
+  module:
+    - options
+id: paragraph.bullets.field_b_background
+field_name: field_b_background
+entity_type: paragraph
+bundle: bullets
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,36 @@
+uuid: 8fec1aea-5258-4b98-9fb1-7783be01a0c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bullet.field_b_description
+    - field.field.paragraph.bullet.field_b_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.bullet
+  module:
+    - image
+    - text
+id: paragraph.bullet.default
+targetEntityType: paragraph
+bundle: bullet
+mode: default
+content:
+  field_b_description:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_b_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
