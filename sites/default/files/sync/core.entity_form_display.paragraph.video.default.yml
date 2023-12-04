@@ -1,0 +1,58 @@
+uuid: 55e958fd-2fb3-4621-9872-5f34cfe9faaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_v_background
+    - field.field.paragraph.video.field_v_subtitle
+    - field.field.paragraph.video.field_v_title
+    - field.field.paragraph.video.field_v_upload_video
+    - field.field.paragraph.video.field_v_video_link
+    - paragraphs.paragraphs_type.video
+  module:
+    - file
+    - text
+    - video_embed_field
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_v_background:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_v_subtitle:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_v_title:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_v_upload_video:
+    type: file_generic
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_v_video_link:
+    type: video_embed_field_textfield
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

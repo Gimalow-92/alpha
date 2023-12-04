@@ -1,0 +1,23 @@
+uuid: ce5970fb-3981-4853-bbf3-81937e7cb581
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+id: paragraph.field_v_upload_video
+field_name: field_v_upload_video
+entity_type: paragraph
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

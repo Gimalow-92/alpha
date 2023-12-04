@@ -1,0 +1,30 @@
+uuid: 7a89406b-794d-450a-af6d-0c69890816b9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_v_subtitle
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.video
+  module:
+    - text
+id: paragraph.video.field_v_subtitle
+field_name: field_v_subtitle
+entity_type: paragraph
+bundle: video
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_long

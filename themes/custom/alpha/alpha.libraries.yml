@@ -3,6 +3,8 @@ global-styling:
     theme:
       css/layout/layout.min.css:
         minified: true
+  js:
+    '//player.vimeo.com/api/player.js': {type: external, minified: true}
 
 social-icons:
   css:
@@ -39,3 +41,14 @@ paragraph-bullets:
     component:
       css/module/paragraph-bullets/paragraph-bullets.module.min.css:
         minified: true
+
+paragraph-video:
+  css:
+    component:
+      css/module/paragraph-video/paragraph-video.module.min.css:
+        minified: true
+  js:
+    templates/components/paragraph-video/video.js: { }
+  dependence:
+    - core/jquery
+    - core/once

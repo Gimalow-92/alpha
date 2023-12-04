@@ -1,0 +1,21 @@
+uuid: fb4979ff-f888-4a9f-80fc-af5ad98dffff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_v_background
+    - paragraphs.paragraphs_type.video
+  module:
+    - options
+id: paragraph.video.field_v_background
+field_name: field_v_background
+entity_type: paragraph
+bundle: video
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

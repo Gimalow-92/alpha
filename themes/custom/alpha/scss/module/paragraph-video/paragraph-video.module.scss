@@ -1,0 +1,36 @@
+@import "../../resources/default-variables";
+@import "../../resources/mixins";
+
+.paragraph--type--video {
+  padding: 40px 0;
+
+  .paragraph-container {
+    max-width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .field--name-field-v-title,
+  .field--name-field-v-subtitle, {
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+    padding: 0 20px;
+    @media (min-width: $md) {
+      max-width: 60%;
+    }
+  }
+
+  .video-container {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    .field--name-field-v-upload-video {
+      video {
+        max-width: 1000px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
