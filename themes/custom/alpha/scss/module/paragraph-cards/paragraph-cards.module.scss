@@ -1,0 +1,122 @@
+@import "../../resources/default-variables";
+@import "../../resources/mixins";
+
+.paragraph--type--cards {
+  padding: 40px 0;
+
+  .paragraph-container {
+    width: 1480px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  .field--name-field-p-title,
+  .field--name-field-p-subtitle, {
+    max-width: 100%;
+    margin: 0 auto 30px;
+    text-align: center;
+    padding: 0 20px;
+    @media (min-width: $md) {
+      max-width: 60%;
+    }
+  }
+
+  .field--name-field-p-card {
+    display: flex;
+    justify-content: center;
+    margin: 0 -10px;
+    flex-wrap: wrap;
+
+    > .field__item {
+      padding: 0 10px
+    }
+
+    .paragraph--type--card {
+      -webkit-box-shadow: 0px 1px 7px 1px rgba(0,0,0,0.4);
+      -moz-box-shadow: 0px 1px 7px 1px rgba(0,0,0,0.4);
+      box-shadow: 0px 1px 7px 1px rgba(0,0,0,0.4);
+      display: inline-block;
+      .field--name-field-c-image {
+        margin: 0 auto 30px;
+
+        img {
+          width: 100%;
+          max-height: 300px;
+          object-fit: cover;
+        }
+      }
+
+      .field--name-field-c-title,
+      .field--name-field-c-subtitle,
+      .field--name-field-c-cta {
+        margin: 0 30px 30px;
+        text-align: center;
+      }
+
+      .field--name-field-c-cta {
+        padding: 16px 0;
+
+        a {
+          @include cta;
+        }
+      }
+    }
+
+    /* one item */
+    > .field__item:first-child:nth-last-child(1) {
+      /* -or- li:only-child { */
+      width: 100%;
+      @media (min-width: $md) {
+        width: 50%;
+      }
+    }
+
+    /* two items */
+    > .field__item:first-child:nth-last-child(2),
+    > .field__item:first-child:nth-last-child(2) ~ .field__item {
+      width: 100%;
+      @media (min-width: $md) {
+        width: 50%;
+      }
+      @media (min-width: $xl) {
+        width: 30%;
+      }
+    }
+
+    /* three items */
+    > .field__item:first-child:nth-last-child(3),
+    > .field__item:first-child:nth-last-child(3) ~ .field__item {
+      width: 100%;
+      @media (min-width: $md) {
+        width: 50%;
+      }
+      @media (min-width: $xl) {
+        width: 33.3333%;
+      }
+    }
+
+    /* four items */
+    > .field__item:first-child:nth-last-child(4),
+    > .field__item:first-child:nth-last-child(4) ~ .field__item {
+      width: 100%;
+      @media (min-width: $md) {
+        width: 50%;
+      }
+      @media (min-width: $xl) {
+        width: 25%;
+      }
+    }
+
+    /* five items */
+    > .field__item:first-child:nth-last-child(5),
+    > .field__item:first-child:nth-last-child(5) ~ .field__item {
+      width: 100%;
+      @media (min-width: $md) {
+        width: 50%;
+      }
+      @media (min-width: $xl) {
+        width: 20%;
+      }
+    }
+  }
+}

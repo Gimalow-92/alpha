@@ -5,6 +5,10 @@
   position: relative;
   overflow: hidden;
   padding: 40px 0;
+  .paragraph-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   .field--name-field-a-title {
     position: relative;
     z-index: 1;

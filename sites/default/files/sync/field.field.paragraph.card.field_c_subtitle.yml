@@ -1,0 +1,30 @@
+uuid: a2f3e2fc-b107-4b97-abed-c8031a3b77a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_c_subtitle
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.card
+  module:
+    - text
+id: paragraph.card.field_c_subtitle
+field_name: field_c_subtitle
+entity_type: paragraph
+bundle: card
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_long

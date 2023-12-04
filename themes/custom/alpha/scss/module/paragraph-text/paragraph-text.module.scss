@@ -3,6 +3,10 @@
 
 .paragraph--type--text {
   padding: 40px 0;
+  .paragraph-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   .field--name-field-t-title,
   .field--name-field-t-text,
   .field--name-field-t-cta {
@@ -10,7 +14,7 @@
     margin: 0 auto;
     text-align: center;
     padding: 0 20px;
-    @media (min-width: 768px) {
+    @media (min-width: $md) {
       max-width: 60%;
     }
   }

@@ -3,24 +3,25 @@
 
 .paragraph--type--text-with-image {
   .paragraph-container {
+    max-width: 1440px;
     display: flex;
     flex-direction: column;
-    @media (min-width: 768px) {
+    margin: 0 auto;
+    @media (min-width: $md) {
       align-items: stretch;
-      margin: -40px auto;
       flex-direction: row;
     }
 
     .container-text,
     .container-image {
-      @media (min-width: 768px) {
+      @media (min-width: $md) {
         width: 50%;
         position: relative;
       }
     }
     .container-text {
       padding: 40px 20px;
-      @media (min-width: 768px) {
+      @media (min-width: $md) {
         padding: 110px 40px;
       }
     }
@@ -35,7 +36,7 @@
     }
     .field--name-field-twi-image {
       img {
-        @media (min-width: 768px) {
+        @media (min-width: $md) {
           position: absolute;
           top: 50%;
           left: 50%;
@@ -54,14 +55,14 @@
   }
   &.right {
     .paragraph-container {
-      @media (min-width: 768px) {
+      @media (min-width: $md) {
         flex-direction: row;
       }
     }
   }
   &.left {
     .paragraph-container {
-      @media (min-width: 768px) {
+      @media (min-width: $md) {
         flex-direction: row-reverse;
       }
     }

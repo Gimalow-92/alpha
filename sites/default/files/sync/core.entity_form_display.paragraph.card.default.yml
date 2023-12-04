@@ -1,0 +1,55 @@
+uuid: af2dd721-14cd-431e-96f9-ee126f1184a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card.field_c_cta
+    - field.field.paragraph.card.field_c_image
+    - field.field.paragraph.card.field_c_subtitle
+    - field.field.paragraph.card.field_c_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.card
+  module:
+    - image
+    - link
+    - text
+id: paragraph.card.default
+targetEntityType: paragraph
+bundle: card
+mode: default
+content:
+  field_c_cta:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_c_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_c_subtitle:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  field_c_title:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
