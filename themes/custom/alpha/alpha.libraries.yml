@@ -27,3 +27,9 @@ paragraph-text-with-image:
     component:
       css/module/paragraph-text-with-image/paragraph-text-with-image.module.min.css:
         minified: true
+
+paragraph-cards:
+  css:
+    component:
+      css/module/paragraph-cards/paragraph-cards.module.min.css:
+        minified: true
