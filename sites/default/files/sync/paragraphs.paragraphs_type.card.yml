@@ -1,0 +1,10 @@
+uuid: f49de10a-7e1b-498b-89c2-73c652c370dd
+langcode: en
+status: true
+dependencies: {  }
+id: card
+label: Card
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

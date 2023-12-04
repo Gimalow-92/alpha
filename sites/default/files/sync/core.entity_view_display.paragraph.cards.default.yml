@@ -1,0 +1,50 @@
+uuid: eb7a0280-6530-4846-a794-d7d73407037c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cards.field_p_background
+    - field.field.paragraph.cards.field_p_card
+    - field.field.paragraph.cards.field_p_subtitle
+    - field.field.paragraph.cards.field_p_title
+    - paragraphs.paragraphs_type.cards
+  module:
+    - entity_reference_revisions
+    - options
+    - text
+id: paragraph.cards.default
+targetEntityType: paragraph
+bundle: cards
+mode: default
+content:
+  field_p_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_p_card:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_p_subtitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
