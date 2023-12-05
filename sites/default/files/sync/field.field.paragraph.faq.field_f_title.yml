@@ -1,0 +1,30 @@
+uuid: 52ab9385-6c55-4332-9fb2-dd81d0ff64c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_f_title
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.faq
+  module:
+    - text
+id: paragraph.faq.field_f_title
+field_name: field_f_title
+entity_type: paragraph
+bundle: faq
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_long

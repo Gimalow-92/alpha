@@ -1,0 +1,58 @@
+uuid: 28a0e666-13f3-4022-a577-213a5882995a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_f_question
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.question
+  module:
+    - entity_reference_revisions
+id: paragraph.faq.field_f_question
+field_name: field_f_question
+entity_type: paragraph
+bundle: faq
+label: Question
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      question: question
+    negate: 0
+    target_bundles_drag_drop:
+      anchor:
+        weight: 11
+        enabled: false
+      bullet:
+        weight: 12
+        enabled: false
+      bullets:
+        weight: 13
+        enabled: false
+      card:
+        weight: 14
+        enabled: false
+      cards:
+        weight: 15
+        enabled: false
+      faq:
+        weight: 16
+        enabled: false
+      question:
+        weight: 17
+        enabled: true
+      text:
+        weight: 18
+        enabled: false
+      text_with_image:
+        weight: 19
+        enabled: false
+      video:
+        weight: 20
+        enabled: false
+field_type: entity_reference_revisions
