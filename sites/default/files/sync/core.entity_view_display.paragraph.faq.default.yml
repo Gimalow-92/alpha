@@ -1,0 +1,50 @@
+uuid: a7db63fa-91a5-447a-a4e4-5c02b22b311b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.faq.field_f_background
+    - field.field.paragraph.faq.field_f_question
+    - field.field.paragraph.faq.field_f_subtitle
+    - field.field.paragraph.faq.field_f_title
+    - paragraphs.paragraphs_type.faq
+  module:
+    - entity_reference_revisions
+    - options
+    - text
+id: paragraph.faq.default
+targetEntityType: paragraph
+bundle: faq
+mode: default
+content:
+  field_f_background:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_f_question:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_f_subtitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_f_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,30 @@
+uuid: d9e30cef-34cb-4cee-9aaf-05957b1c6562
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_f_subtitle
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.faq
+  module:
+    - text
+id: paragraph.faq.field_f_subtitle
+field_name: field_f_subtitle
+entity_type: paragraph
+bundle: faq
+label: Subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_long

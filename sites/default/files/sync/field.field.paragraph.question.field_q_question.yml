@@ -1,0 +1,30 @@
+uuid: 5082541e-3601-48d8-89cb-eee1f611a4bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_q_question
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - paragraphs.paragraphs_type.question
+  module:
+    - text
+id: paragraph.question.field_q_question
+field_name: field_q_question
+entity_type: paragraph
+bundle: question
+label: Question
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 86858759-f131-40a6-925d-c37fbb36ec91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_f_background
+    - paragraphs.paragraphs_type.faq
+  module:
+    - options
+id: paragraph.faq.field_f_background
+field_name: field_f_background
+entity_type: paragraph
+bundle: faq
+label: Background
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

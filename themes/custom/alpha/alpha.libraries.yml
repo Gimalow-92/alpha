@@ -52,3 +52,14 @@ paragraph-video:
   dependence:
     - core/jquery
     - core/once
+
+paragraph-faq:
+  css:
+    component:
+      css/module/paragraph-faq/paragraph-faq.module.min.css:
+        minified: true
+  js:
+    templates/components/paragraph-faq/faq.js: { }
+  dependence:
+    - core/jquery
+    - core/once
